@@ -1,5 +1,12 @@
-a = 999
-if a % 2 == 0:
-    print(f"{a}是偶数")
+a = 135
+b = 98
+c = 129
+number = a * b
+if number > a*c:
+    print(number)
+elif b*c > a*c:
+    number = b*c
+    print(number)
 else:
-    print(f"{a}是奇数")
+    number = a*c
+    print(number)
