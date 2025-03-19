@@ -7,3 +7,13 @@ elif 80 > results >= 60:
     print("C")
 else:
     print("D")
+
+num = 23
+if num > 0:
+    print("num大于0")
+    if num % 2 == 0:
+        print("num是偶数")
+    else:
+        print("num是奇数")
+else:
+    print("num小于0")
