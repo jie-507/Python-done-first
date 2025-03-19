@@ -17,3 +17,12 @@ if num > 0:
         print("num是奇数")
 else:
     print("num小于0")
+
+skill = 100
+click = 1
+if skill >= 100:
+    print("大招准备就绪")
+    if click == 1:
+        print("大招已发送")
+    else:
+        print("大招未发送")
