@@ -27,3 +27,8 @@ print(f"我的名字是{name},今年{age}岁了")
 print(f"我的名字是{name},今年{age + 1}岁了")
 print(f"我的名字是{name},\n今年{age}岁了")  # 转义字符换行\n
 print("\tabcd")  # 制表符一个tab距离四个空格号/t
+
+a = 1
+b = 2
+c = a if a > b else b
+print(c)
