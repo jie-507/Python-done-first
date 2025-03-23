@@ -2,7 +2,7 @@
 # 使用功能 random.randint()因为随机一个整数所以int
 
 import random
-num = random.randint(0, 8)  # 0到2之间开始结束
+num = random.randint(0, 8)  # 0到8之间开始结束
 print(num)
 
 
@@ -10,7 +10,7 @@ print(num)
 str1 = 'abcdefg'
 print(str1)
 print(str1[0])  # 得到a
-print(str1[3])
+print(str1[3])  # 得到d
 
 #  切片，字符串，列表，元组都有这个操作
 #  序列[开始位置下标：结束位置下标：步长]（左闭右开）步长可以不写默认为1
@@ -27,10 +27,10 @@ print(mystr.find('and'))  # 12 and开始字符下标为12
 print(mystr.find('and', 15, 30))  # 23从15到30开始查找
 print(mystr.find('ands', 15, 30))  # -1 不存在
 # index()
-# print(mystr.index('and'))
+# print(mystr.index('and'))，也是查找
 print(mystr.index('and', 15, 30))
 # print(mystr.index('ands', 15, 30))  # 如果index查找子串不存在，报错
-# count()统计次数
+# count()统计次数，也是查找
 print(mystr.count('and', 15, 30))
 print(mystr.count('and'))
 print(mystr.count('ands'))
@@ -69,6 +69,7 @@ print(new_str)
 
 # 字符串序列.ljust(长度,填充字符），左对齐。  2.rjust右对齐   3.center，居中。
 
+
 # startswith()判断是否以某一个开头结果为布尔值Ture或者False。 2 endswith()判断是否以某一个为结尾
 mystr = 'hello world and itcast and itheima and Python'
 print(mystr.startswith('hello'))
@@ -84,3 +85,4 @@ mystr3 = 'abc123'
 print(mystr2.isdigit())
 print(mystr.isalnum())
 print(mystr3.isalnum())
+print(mystr.isspace())
