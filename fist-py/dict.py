@@ -12,7 +12,13 @@ print(products.keys())
 a = '炸鸡' in products.keys()
 print(a)  # 考验in运算，布尔值
 # print(products[1:2])  #不能对字典使用索引或者切片
+
+# 练习一点点
 num = products['可乐']
 if num <= 10:
     products['可乐'] = '可乐降价了'
 print(products)
+products['China'] = 'BeiJing'
+print(products)
+money = products['冰淇淋'] + products['薯条']*2
+print(f'我一共吃了{money}元')
