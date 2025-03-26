@@ -2,7 +2,7 @@ gasd = [13, 14, 15, 16, 18]
 print(gasd)
 gasd[4] = 17
 print(gasd)
-# 最后末尾加入append
+# 最后末尾加入append，增加数据，列表名.append（数据），extend也可以在结尾追加
 gasd.append(19)
 print(gasd)
 # 插入insert，可以选插入位置和内容
@@ -20,6 +20,10 @@ print(gasd.index(15, 0, 2))  # 存在则出1，若查找不存在则报错
 # 统计出现次数，序列名.count（），不存在就会出现0
 gasd[5] = 15
 print(gasd.count(15))  # 有两个15，所以输出2
+# 序列.insert(位置下标，数据），指定位置增加数据
+gasd.insert(0, 9)
+print(gasd)
+
 
 # 练习
 rank_list = [100, 98, 88, 80, 75, 64]
