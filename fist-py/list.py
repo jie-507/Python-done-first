@@ -11,6 +11,9 @@ print(gasd)
 # 删除pop，括号内填索引即可，不填默认删除最后一个
 gasd.pop(1)
 print(gasd)
+# 查找内容个数，len
+print(len(gasd))
+
 
 # 练习
 rank_list = [100, 98, 88, 80, 75, 64]
